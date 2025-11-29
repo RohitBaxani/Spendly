@@ -1,0 +1,80 @@
+<div class="chat-container">
+  <div class="chat-header">
+    <div>
+      <h2>Spendly – Agentic Finance Planner</h2>
+      <p>Upload files + chat like Gemini, get multi-agent plans.</p>
+    </div>
+
+    <div class="controls">
+      <label>
+        Intent
+        <select [(ngModel)]="intent">
+          <option value="spending_plan">Monthly Spending Plan</option>
+          <option value="tax_saver">Tax Saver</option>
+          <option value="investment">Investment Planner</option>
+          <option value="loan">Loan Capability</option>
+        </select>
+      </label>
+
+      <label class="file-upload">
+        <input type="file" (change)="onFileSelected($event)" />
+        <span>{{ uploading ? 'Uploading…' : 'Upload CSV / PDF' }}</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="loan-inputs" *ngIf="intent === 'loan'">
+    <input
+      type="number"
+      placeholder="Monthly income (₹)"
+      [(ngModel)]="monthlyIncome"
+    />
+    <input
+      type="number"
+      placeholder="Existing EMIs (₹)"
+      [(ngModel)]="existingEmi"
+    />
+    <input
+      type="number"
+      placeholder="CIBIL score"
+      [(ngModel)]="cibilScore"
+    />
+  </div>
+
+  <div class="chart-panel" *ngIf="spendingData">
+    <h3>Spending Breakdown</h3>
+    <div class="chart-row" *ngFor="let cat of spendingData | keyvalue">
+      <span>{{ cat.key }}</span>
+      <div class="bar">
+        <div class="fill" [style.width.%]="cat.value"></div>
+      </div>
+      <small>{{ cat.value | number: '1.0-1' }}%</small>
+    </div>
+  </div>
+
+  <div class="chat-body">
+    <div
+      class="bubble"
+      *ngFor="let m of messages"
+      [ngClass]="m.role === 'user' ? 'user' : 'assistant'"
+    >
+      {{ m.content }}
+    </div>
+    <div class="hint" *ngIf="messages.length === 0">
+      Try “I want a monthly spending plan” and upload bank.csv!
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <textarea
+      [(ngModel)]="input"
+      placeholder="Type your question…"
+      (keydown.enter)="send(); $event.preventDefault()"
+    ></textarea>
+    <button (click)="send()" [disabled]="sending">
+      {{ sending ? 'Sending…' : 'Send' }}
+    </button>
+  </div>
+</div>
+
+

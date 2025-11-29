@@ -70,12 +70,23 @@ def run_turn(
         result = loan_eligibility(monthly_income, existing_emi, cibil_score)
 
     summary_prompt = f"""
-You are Spendly, a personal finance assistant.
+You are Spendly, a clear and concise personal finance assistant.
 
-User latest message: {message}
-Intermediate result JSON: {result}
+CONTEXT
+- Latest user message: {message}
+- Agent result JSON (may contain numbers and flags): {result}
 
-Write an executive summary in 4-6 bullet points, friendly tone.
+TASK
+- Summarise the key insights for the user in a way that feels like a WhatsApp chat reply.
+
+OUTPUT FORMAT (PLAIN TEXT, NO MARKDOWN)
+- First line: 1 short sentence summarising the situation in plain language.
+- Then 3–6 bullets starting with "- " that:
+  - highlight the 2–3 most important numbers or flags,
+  - suggest next actions the user can take this month,
+  - avoid jargon.
+- Keep each bullet to max 2 short sentences.
+- Do NOT use **bold**, headings, tables, or markdown.
 """
     summary = call_llm(summary_prompt)
 

@@ -1,0 +1,233 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a monthly spending plan"
+    },
+    {
+      "role": "assistant",
+      "content": "Your income is strong at Rs. 159,698, but your emergency fund needs immediate attention.\n\n- Your emergency fund is currently less than 2 months of income saved; make building this your top priority. Aim to save 6-9 months of expenses.\n- Try to save a substantial 45-50% of your income monthly, which is about Rs. 72,000 - Rs. 80,000. Channel this mainly towards your emergency fund for now.\n- Keep your essential spending (like rent, groceries, transport) below 30-35% of your income. Start tracking every rupee you spend this month to understand your habits.\n- Once your emergency fund is secure, you can comfortably aim for a monthly saving of Rs. 40,000-Rs. 50,000 for long-term wealth creation."
+    },
+    {
+      "role": "user",
+      "content": "Now give me tax saver options please"
+    },
+    {
+      "role": "assistant",
+      "content": "To help find your best tax saver options, we need to know about your current rent situation.\n\n- Your rent details can unlock specific tax saving opportunities for you.\n- Please tell us if you currently pay rent.\n- If you do, share your monthly rent amount and the city you live in.\n- This information helps us give you more personalised advice this month."
+    },
+    {
+      "role": "user",
+      "content": "I live on rent and I pay 10000 monthly, and I live in mumbai"
+    },
+    {
+      "role": "assistant",
+      "content": "You've shared your rent details with me.\n- Your monthly rent is 10,000.\n- You live in Mumbai.\n- Let's track your other main expenses for the month, like food or transport.\n- This will help us understand your overall spending."
+    },
+    {
+      "role": "user",
+      "content": "I have uploaded my csv"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for uploading your transactions! I'm almost ready to show you some insights.\n\n- To get the most accurate picture, could you tell me if you pay rent?\n- If yes, please let me know your monthly rent amount and the city you live in.\n- Once I have this, I can start analysing your spending and finding ways to save."
+    }
+  ],
+  "state": {
+    "parsed_bank": {
+      "income": 159698.0,
+      "transactions": [
+        {
+          "date": "2024-12-01",
+          "desc": "Salary Credit",
+          "amount": 50000.0,
+          "category": "Salary"
+        },
+        {
+          "date": "2024-12-02",
+          "desc": "Zomato Food Order",
+          "amount": 600.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-03",
+          "desc": "Uber Ride",
+          "amount": 250.0,
+          "category": "Transport"
+        },
+        {
+          "date": "2024-12-04",
+          "desc": "Amazon Shopping",
+          "amount": 1200.0,
+          "category": "Shopping"
+        },
+        {
+          "date": "2024-12-05",
+          "desc": "Rent Payment",
+          "amount": 15000.0,
+          "category": "Rent"
+        },
+        {
+          "date": "2024-12-06",
+          "desc": "Swiggy Food",
+          "amount": 450.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-07",
+          "desc": "Electricity Bill",
+          "amount": 800.0,
+          "category": "Utilities"
+        },
+        {
+          "date": "2024-12-08",
+          "desc": "Netflix Subscription",
+          "amount": 499.0,
+          "category": "Shopping"
+        },
+        {
+          "date": "2024-12-09",
+          "desc": "Petrol",
+          "amount": 1500.0,
+          "category": "Transport"
+        },
+        {
+          "date": "2024-12-10",
+          "desc": "Zomato Food",
+          "amount": 550.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-11",
+          "desc": "EMI Payment",
+          "amount": 8000.0,
+          "category": "EMI"
+        },
+        {
+          "date": "2024-12-12",
+          "desc": "Medical Pharmacy",
+          "amount": 1200.0,
+          "category": "Others"
+        },
+        {
+          "date": "2024-12-13",
+          "desc": "Uber Ride",
+          "amount": 300.0,
+          "category": "Transport"
+        },
+        {
+          "date": "2024-12-14",
+          "desc": "Flipkart Shopping",
+          "amount": 2500.0,
+          "category": "Shopping"
+        },
+        {
+          "date": "2024-12-15",
+          "desc": "Swiggy Food",
+          "amount": 650.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-16",
+          "desc": "Internet Bill",
+          "amount": 600.0,
+          "category": "Utilities"
+        },
+        {
+          "date": "2024-12-17",
+          "desc": "Zomato Food",
+          "amount": 700.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-18",
+          "desc": "EMI Payment",
+          "amount": 8000.0,
+          "category": "EMI"
+        },
+        {
+          "date": "2024-12-19",
+          "desc": "Petrol",
+          "amount": 1200.0,
+          "category": "Transport"
+        },
+        {
+          "date": "2024-12-20",
+          "desc": "Amazon Shopping",
+          "amount": 1800.0,
+          "category": "Shopping"
+        },
+        {
+          "date": "2024-12-21",
+          "desc": "Swiggy Food",
+          "amount": 500.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-22",
+          "desc": "Uber Ride",
+          "amount": 200.0,
+          "category": "Transport"
+        },
+        {
+          "date": "2024-12-23",
+          "desc": "Zomato Food",
+          "amount": 600.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-24",
+          "desc": "Netflix Subscription",
+          "amount": 499.0,
+          "category": "Shopping"
+        },
+        {
+          "date": "2024-12-25",
+          "desc": "Swiggy Food",
+          "amount": 750.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-26",
+          "desc": "Petrol",
+          "amount": 1000.0,
+          "category": "Transport"
+        },
+        {
+          "date": "2024-12-27",
+          "desc": "EMI Payment",
+          "amount": 8000.0,
+          "category": "EMI"
+        },
+        {
+          "date": "2024-12-28",
+          "desc": "Salary Credit",
+          "amount": 50000.0,
+          "category": "Salary"
+        },
+        {
+          "date": "2024-12-29",
+          "desc": "Zomato Food",
+          "amount": 600.0,
+          "category": "Food"
+        },
+        {
+          "date": "2024-12-30",
+          "desc": "Uber Ride",
+          "amount": 250.0,
+          "category": "Transport"
+        },
+        {
+          "date": "2024-12-31",
+          "desc": "Amazon Shopping",
+          "amount": 1500.0,
+          "category": "Shopping"
+        }
+      ],
+      "emergencyFund": 39924.5
+    },
+    "tax_questions": {},
+    "awaiting_tax_answer": true,
+    "tax_parsed": "```json\n{\n  \"rent_amount\": null,\n  \"rent_city\": null,\n  \"health_premium\": null,\n  \"has_home_loan\": false,\n  \"home_loan_emi\": null,\n  \"home_loan_interest_year\": null\n}\n```"
+  }
+}

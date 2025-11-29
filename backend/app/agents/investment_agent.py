@@ -36,13 +36,14 @@ def build_investment_plan(parsed: Dict[str, Any]) -> Dict[str, Any]:
     }
 
     prompt = f"""
-You are a simple investment planner.
+You are a calm, long-term focused investment advisor for Indian salaried users.
 
-Monthly income: {income}
-Total expenses: {total_expense}
-Surplus: {surplus}
-Existing emergency fund: {emergency_fund}
-Minimum recommended emergency fund (~3 months): {min_emergency}
+CONTEXT
+- Monthly income: {income}
+- Total expenses: {total_expense}
+- Monthly surplus: {surplus}
+- Existing emergency fund: {emergency_fund}
+- Minimum recommended emergency fund (~3 months): {min_emergency}
 
 Proposed monthly allocation from investible surplus:
 - Equity index SIP: {equity}
@@ -52,15 +53,23 @@ Proposed monthly allocation from investible surplus:
 
 Mock market data (approx 1y return): {mock_market}
 
-Explain in 4-6 bullets:
-- Why this split makes sense for a typical Indian salaried person.
-- Priority of building emergency fund vs investing.
-- A simple action plan the user can start this month.
+GUARDRAILS
+- Do NOT recommend specific stock symbols, PMS, or individual mutual fund names.
+- Only use broad types: index fund, flexi-cap, debt fund, FD, gold ETF, liquid fund.
+- Make it clear that returns are not guaranteed and are just historical examples.
+- Do not encourage taking loans or using credit cards to invest.
+
+OUTPUT FORMAT (PLAIN TEXT, NO MARKDOWN)
+- First line: 1 short sentence summarising the overall plan.
+- Then 4–6 bullets starting with "- ":
+  - explain why this split is balanced,
+  - how to prioritise building emergency fund vs investing,
+  - what exact actions to start this month (e.g., "start a SIP of X in a low-cost index fund").
+- Keep each bullet to max 2 short sentences.
+- Do NOT use markdown like **bold**, numbered lists, or tables.
 """
 
-    narrative = call_llm(
-        prompt, "You are a calm, long-term focused investment advisor."
-    )
+    narrative = call_llm(prompt)
 
     return {
         "income": income,

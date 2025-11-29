@@ -1,0 +1,21 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want to know about my loan capabilities and help me to improve my cibil score"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like getting a new loan might be tricky at the moment due to your current financial commitments.\n\n- Your CIBIL score is 683, which is acceptable but can be improved for better offers.\n- Your current monthly loan payments (EMIs) of ₹25,000 are higher than the recommended limit of ₹24,000 based on your income.\n- To improve your CIBIL score, make sure all your EMI payments are always on time.\n- Try to reduce your existing loan or credit card outstanding amounts to free up your budget.\n- Keep your credit card balance below 30% of your limit for healthier CIBIL."
+    },
+    {
+      "role": "user",
+      "content": "I am planning to take a home loan so any suggestions?"
+    },
+    {
+      "role": "assistant",
+      "content": "Based on a tight check, you might qualify for a new loan of up to about 2.25 lakhs.\n\n- Your CIBIL score is 683, which is lower than the 700+ banks usually look for. Improving this will boost your loan chances.\n- Your existing loan payments already take up 42% of your monthly income. Banks generally prefer this ratio to be below 40%.\n- Try to close smaller loans or credit card balances this month. This frees up your monthly budget for new loan payments.\n- Always pay all your dues on time and regularly check your credit report for accuracy. This will help improve your CIBIL score."
+    }
+  ],
+  "state": {}
+}

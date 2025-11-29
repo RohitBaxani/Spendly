@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tell me my loan capabilities"
+    },
+    {
+      "role": "assistant",
+      "content": "You could likely get a new loan of around 9 lakh rupees.\n- Your CIBIL score is 700, which is acceptable. A higher score can get you better terms.\n- You could comfortably manage a new monthly payment of 15,000 to 20,000 rupees.\n- Try to close small outstanding loans or reduce your credit card debt this month. This can improve your chances.\n- Always pay your existing loan instalments on time. This significantly strengthens your financial profile.\n- Make sure your total monthly payments don't become too high, leaving room for unexpected expenses."
+    }
+  ],
+  "state": {}
+}

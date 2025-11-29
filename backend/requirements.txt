@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+google-generativeai
+pydantic
+pydantic-settings
+pandas
+PyPDF2
+python-multipart
+
+

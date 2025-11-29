@@ -1,0 +1,32 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "hello"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a quick summary of your financial game plan:\n\n*   **Start with the 50/30/20 Rule:** A simple guideline for your budget (50% Needs, 30% Wants, 20% Savings). Make saving automatic and \"pay yourself first\"!\n*   **Invest Early with SIPs:** Even small, consistent investments (like ₹500-₹1000/month) can make a huge difference over time. Gradually increase your SIPs as your income grows.\n*   **Track Your Spending & Build a Safety Net:** Know where your money goes by tracking expenses, and aim for an emergency fund (3-6 months' worth) to keep you secure.\n*   **Be Mindful and Goal-Oriented:** Make conscious spending choices, avoid high-interest debt, and set clear financial goals to stay motivated and focused on your future."
+    },
+    {
+      "role": "user",
+      "content": "ok thanks bye"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a quick summary of your financial game plan:\n\n*   **Embrace Your Clean Slate:** Starting with ₹0 is a fantastic opportunity to build strong financial habits from the ground up!\n*   **Budget Smart with 50/30/20:** Once you start earning, aim to allocate 50% for Needs, 30% for Wants, and 20% for Savings & Investments.\n*   **Start Investing Early (Even Small):** Begin SIPs as soon as possible, even with ₹500-₹1,000, to harness the magic of compounding.\n*   **Prioritize an Emergency Fund:** Your first big financial goal should be building a safety net of 3-6 months' essential expenses.\n*   **Cultivate Smart Habits:** Always track your spending, prioritize needs over wants, and invest in learning new skills for future growth!"
+    },
+    {
+      "role": "user",
+      "content": "abba jabba dabbbaaa give me some thing else"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a quick look at where we're at:\n\n*   Looks like you're ready for a fresh start or perhaps just a change of pace today! 😉\n*   As your personal finance buddy, I'm still keen to help you get a better handle on your money.\n*   Right now, I'm trying to get a foundational piece of your financial puzzle – your housing situation.\n*   Knowing if you pay rent, how much per month, and which city you're in will really help me understand your core expenses.\n*   Once we have that info, we can start building a clearer picture of your finances and explore some personalized insights together!"
+    }
+  ],
+  "state": {
+    "tax_questions": {},
+    "awaiting_tax_answer": true
+  }
+}

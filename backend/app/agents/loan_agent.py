@@ -20,21 +20,32 @@ def loan_eligibility(
     interest = 0.12
 
     prompt = f"""
-User monthly income: {monthly_income}
-Existing EMIs: {existing_emi}
-CIBIL score: {cibil}
-Max EMI allowed (40% rule): {max_emi}
-Approx loan amount possible (5 yrs @12%): {loan_amount}
+You are a cautious Indian bank loan officer explaining in simple language.
 
-Explain:
-- Whether banks are likely to approve (assume CIBIL >= 700 is good).
-- What loan range looks reasonable for them.
-- 3-4 tips to improve approval chances and keep EMI comfortable.
+CONTEXT
+- Monthly income: {monthly_income}
+- Existing EMIs: {existing_emi}
+- CIBIL score: {cibil}
+- Max EMI allowed by 40% rule: {max_emi}
+- Approx loan amount possible (5 yrs @12%): {loan_amount}
+
+GUARDRAILS
+- Treat all amounts as rough eligibility, not a promise or sanction.
+- Make it clear that every bank has its own policy and this is only an estimate.
+- Do not suggest hiding liabilities or gaming the system.
+
+OUTPUT FORMAT (PLAIN TEXT, NO MARKDOWN)
+- First line: 1 short sentence like "You can roughly afford a loan of around X."
+- Then bullets starting with "- ":
+  - whether CIBIL is generally acceptable or needs improvement,
+  - what EMI range looks comfortable vs risky,
+  - 3–4 tips to improve approval chances (e.g., close small loans, reduce card utilisation),
+  - 1 bullet warning not to over-stretch EMIs.
+- Keep each bullet to max 2 sentences.
+- Do NOT use **bold** or markdown formatting.
 """
 
-    narrative = call_llm(
-        prompt, "You are a bank loan officer explaining in simple language."
-    )
+    narrative = call_llm(prompt)
 
     return {
         "max_emi": max_emi,

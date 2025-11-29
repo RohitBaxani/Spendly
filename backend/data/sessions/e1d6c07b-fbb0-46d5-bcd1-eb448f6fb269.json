@@ -1,0 +1,21 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want to know my investment plan"
+    },
+    {
+      "role": "assistant",
+      "content": "It looks like we need to first figure out your current income and expenses to create an investment plan.\n- Your current income and surplus are both 0.0, so we can't create an investment plan yet.\n- Please share your monthly income and essential expenses to find your actual surplus.\n- Once you have a surplus, prioritize building an emergency fund for 3-6 months of expenses.\n- After that, we can look at a diversified investment plan, possibly with equity, debt, and gold."
+    },
+    {
+      "role": "user",
+      "content": "My monthly income is 70000"
+    },
+    {
+      "role": "assistant",
+      "content": "Let's build a strong financial foundation for you.\n- We first need to establish your income and expenses to understand your monthly surplus. The current figures show no income or savings.\n- Your immediate priority is to build an emergency fund, aiming for 3 to 6 months of essential expenses. This fund is crucial before considering investments.\n- Once a surplus is generated, direct it towards this emergency fund, ideally in a liquid fund for easy access. Liquid funds have historically offered returns of around 5% per year."
+    }
+  ],
+  "state": {}
+}

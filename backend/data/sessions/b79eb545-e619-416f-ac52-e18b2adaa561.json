@@ -1,0 +1,21 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want a monthly spending plan"
+    },
+    {
+      "role": "assistant",
+      "content": "Let's get your monthly spending plan off to a great start!\n- Your plan aims for 50% on Needs, 30% on Wants, and 20% for Savings. This is a great framework to follow.\n- A good goal this month is to set up a detailed budget. This will help you track where your money goes.\n- Consider starting a monthly investment (SIP) with 10-15% of your income. Even a small start is impactful.\n- Prioritize building an emergency fund to cover 3-6 months of essential expenses. This will give you financial peace of mind.\n- Review all your subscriptions and try cooking at home more often. These small changes can really add up."
+    },
+    {
+      "role": "user",
+      "content": "Suggest me more detail plan"
+    },
+    {
+      "role": "assistant",
+      "content": "Great starting point! Let's build a solid financial plan together.\n- Aim for about 50-55% of your take-home pay for essential Needs, 20-25% for Wants, and at least 20-25% for Savings & Investments.\n- Once you have steady income, try to start investing INR 5,000-10,000 monthly into simple funds.\n- Start tracking all your spending closely to see where your money goes. This helps you understand your habits.\n- Also, begin building an emergency fund to cover 3-6 months of your essential expenses.\n- Review your subscriptions and consider cooking at home more often to save extra cash."
+    }
+  ],
+  "state": {}
+}

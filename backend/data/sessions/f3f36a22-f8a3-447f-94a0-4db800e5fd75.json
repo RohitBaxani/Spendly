@@ -1,0 +1,33 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "I want to know how can I save tax"
+    },
+    {
+      "role": "assistant",
+      "content": "To help you save tax, we need a little more information first.\n- Your rent payments can be a way to reduce your tax bill.\n- Please tell us if you pay rent.\n- If you do, share your monthly rent amount and the city you live in."
+    },
+    {
+      "role": "user",
+      "content": "I pay 10000 rupees rent in mumbai"
+    },
+    {
+      "role": "assistant",
+      "content": "Thanks for letting us know your rent details!\n\n- You pay 10,000 rupees for rent each month in Mumbai.\n- We'll now track this as your regular housing expense.\n- You can review how this impacts your monthly budget and spending."
+    },
+    {
+      "role": "user",
+      "content": "tell me my tax saving plan"
+    },
+    {
+      "role": "assistant",
+      "content": "I can help you build your tax saving plan, but I need a little more information first.\n- To find potential deductions, I need to know if you pay rent.\n- If you do, please tell me how much you pay per month and the city you live in.\n- This information helps me find specific tax benefits for you."
+    }
+  ],
+  "state": {
+    "tax_questions": {},
+    "awaiting_tax_answer": true,
+    "tax_parsed": "```json\n{\n  \"rent_amount\": null,\n  \"rent_city\": null,\n  \"health_premium\": null,\n  \"has_home_loan\": false,\n  \"home_loan_emi\": null,\n  \"home_loan_interest_year\": null\n}\n```"
+  }
+}

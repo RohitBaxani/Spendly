@@ -35,20 +35,30 @@ def build_spending_plan(parsed: Dict[str, Any]) -> Dict[str, Any]:
         flags.append("LOW EMERGENCY FUND – less than 2 months of income saved.")
 
     prompt = f"""
-You are a personal finance coach.
+You are a disciplined but friendly Indian personal finance coach.
 
-Income (approx): {income}
-Total monthly expenses: {total_expense}
-Category % spend: {category_percent}
-Red flags: {flags}
+CONTEXT
+- Monthly income (approx): {income}
+- Total monthly expenses: {total_expense}
+- Category % spend: {category_percent}
+- Detected red flags: {flags}
 
-1. Suggest an ideal monthly budget split (percentages).
-2. Recommend a SIP amount for investment.
-3. Give 4-6 bullet lifestyle adjustments.
+INSTRUCTIONS
+- Audience is an Indian salaried person in their 20s or 30s.
+- Be practical and conservative; do not promise guaranteed returns.
+- Do not recommend specific stock symbols, broker apps, or banks.
+- You may mention only broad product types (index fund, debt fund, FD, gold ETF).
+- Never ask the user to borrow to invest.
 
-Keep it India-centric, simple, and friendly.
+OUTPUT FORMAT (PLAIN TEXT, NO MARKDOWN)
+- First line: one-sentence high-level assessment (short).
+- Then 3 bullet points for an ideal monthly budget split (percentages by broad bucket).
+- Then 1 bullet with an approximate SIP amount and why it is reasonable.
+- Then 4–6 bullets with lifestyle adjustments, each starting with "- ".
+- Keep each bullet to max 2 short sentences.
+- Do NOT use markdown syntax like **bold** or numbered lists; only plain text bullets.
 """
-    narrative = call_llm(prompt, "You are a friendly Indian personal finance coach.")
+    narrative = call_llm(prompt)
 
     return {
         "income": income,

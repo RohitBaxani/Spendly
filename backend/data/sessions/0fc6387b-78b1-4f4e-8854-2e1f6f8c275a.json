@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Help me plan my investments"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a friendly summary of your investment planning guide:\n\n*   **Build Your Safety Net First:** Your top priority is to create a robust **emergency fund** (aim for 3-6 months of essential expenses) to protect yourself from life's curveballs.\n*   **Grow with Equities Long-Term:** Once your emergency fund is secure, focus on long-term wealth creation by investing a significant portion in **equities**, perhaps through diversified index funds like a Nifty 50 SIP.\n*   **Diversify for Stability:** Balance your portfolio and reduce risk by including **debt instruments** (like FDs) and a smaller allocation to **gold**.\n*   **Keep Cash Handy:** Use **liquid funds** for your emergency corpus and any very short-term needs, ensuring easy access to your money.\n*   **Know Your Numbers:** Your immediate next step is to accurately **track your monthly income and all expenses** to discover your true investible surplus.\n*   **Invest Systematically:** After setting up your emergency fund, establish **Systematic Investment Plans (SIPs)** into a diversified mix of equity and debt based on your goals."
+    }
+  ],
+  "state": {}
+}
