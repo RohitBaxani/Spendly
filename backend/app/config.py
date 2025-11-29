@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     """Application settings for Spendly backend."""
 
-    google_api_key: str = os.getenv("GOOGLE_API_KEY", "AIzaSyAeLtjcHBUVIyXIlUhte8qIKb-JwpoA0f4")
+    google_api_key: str = os.getenv("GOOGLE_API_KEY", "<YOUR_GEMINI_API_KEY_HERE>")
     model_name: str = os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash")
 
     backend_base_dir: str = os.path.dirname(os.path.abspath(__file__))
